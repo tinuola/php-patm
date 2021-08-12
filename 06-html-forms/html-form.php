@@ -7,6 +7,7 @@
   <title>HTML Form-</title>
 </head>
 <body>
+  <!-- Using a HTML form and sending data to a PHP script. -->
   <form action="html-form-processor.php" method="post">
     <input type="text" name="lastname" placeholder="Last Name">
     Male <input type="radio" name="gender" value="male">

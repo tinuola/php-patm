@@ -14,21 +14,21 @@
   <form action="temp-converter-processor.php" method="post">
 
     <!-- Get temperature -->
-    <label for="temperature-value">Enter the temperature:</label>
-    <input type="text" name="temperature-value" placeholder="Integers only...">
+    <label for="temperature_value">Enter the temperature:</label>
+    <input type="text" name="temperature_value" placeholder="Positive integers only...">
     <br><br>
 
     <!-- Select celcius or fahrenheit -->
-    Celcius <input type="radio" name="temperature-unit" value="celcius">
-    Fahrenheit <input type="radio" name="temperature-unit" value="fahrenheit">
+    Celcius <input type="radio" name="temperature_unit" value="celcius">
+    Fahrenheit <input type="radio" name="temperature_unit" value="fahrenheit">
     <br><br>
 
     <!-- Select degree of accuracy -->
-    <label for="degree-accuracy">Select degree of accuracy</label>
-    <select name="degree-accuracy">
-      <option value="whole-number">Whole Number</option>
-      <option value="one-decimal">1 Decimal Place</option>
-      <option value="two-decimal">2 Decimal Places</option>
+    <label for="degree_accuracy">Select degree of accuracy</label>
+    <select name="degree_accuracy">
+      <option value="whole_number">Whole Number</option>
+      <option value="one_decimal">1 Decimal Place</option>
+      <option value="two_decimal">2 Decimal Places</option>
     </select>
     <br><br>
 
