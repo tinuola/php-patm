@@ -7,10 +7,8 @@
   <title>Temperature Converter</title>
 </head>
 <body>
-
-  <!-- Challenge -->
-  <h3>Temperature Converter</h3>
-  <form action="temp-processor.php" method="post">
+  <h3>Temperature Converter (Refactored)</h3>
+  <form action="temp-processor-v2.php" method="post">
 
     <!-- Get temperature -->
     <label for="temperature_value">Enter the temperature:</label>
@@ -26,9 +24,10 @@
     <!-- Select degree of accuracy -->
     <label for="degree_accuracy">Select degree of accuracy</label>
     <select name="degree_accuracy">
-      <option value="whole_number">Whole Number</option>
-      <option value="one_decimal">1 Decimal Place</option>
-      <!-- <option value="two_decimal">2 Decimal Places</option> -->
+      <option value="0">Whole Number</option>
+      <option value="1">1 Decimal Place</option>
+      <option value="2">2 Decimal Places</option>
+      <option value="3">3 Decimal Places</option>
     </select>
     <br><br>
 
