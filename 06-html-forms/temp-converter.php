@@ -9,16 +9,16 @@
 <body>
 
   <!-- Challenge -->
-  <!--  -->
 
-  <form action="temp-converter-processor.php" method="post">
+  <form action="temp-processor.php" method="post">
 
     <!-- Get temperature -->
     <label for="temperature_value">Enter the temperature:</label>
     <input type="text" name="temperature_value" placeholder="Positive integers only...">
-    <br><br>
+    <br>
 
     <!-- Select celcius or fahrenheit -->
+    <p>Unit to convert from is:</p>
     Celcius <input type="radio" name="temperature_unit" value="celcius">
     Fahrenheit <input type="radio" name="temperature_unit" value="fahrenheit">
     <br><br>
@@ -28,12 +28,12 @@
     <select name="degree_accuracy">
       <option value="whole_number">Whole Number</option>
       <option value="one_decimal">1 Decimal Place</option>
-      <option value="two_decimal">2 Decimal Places</option>
+      <!-- <option value="two_decimal">2 Decimal Places</option> -->
     </select>
     <br><br>
 
     <!-- Submit -->
-    <input type="submit" value="Submit">
+    <input type="submit" name="submit" value="CONVERT">
 
   </form>
 
