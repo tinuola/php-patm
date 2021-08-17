@@ -9,6 +9,10 @@ echo "<pre>";
 
 $cities = [ "London", "Paris", "Amsterdam", "New York", "Berlin", "Brisbane" ];
 
+// OR explode the string!
+// $string = 'London, Paris, Amsterdam, New York, Berlin, Brisbane';
+// $cities = explode(", ", $string);
+
 // Sort the cities alphabetically.
 sort( $cities );
 print_r( $cities );
