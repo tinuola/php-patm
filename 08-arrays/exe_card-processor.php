@@ -66,3 +66,54 @@ if ( isset( $_POST[ 'submit' ] ) ){
   echo "Invalid form entry.";
 
 }
+
+
+/* Instructor Solution + Pseudo-code
+
+// Check if form is submitted
+if(isset($_POST['submit])){
+
+  // Assign variables, total, incrementer
+  $cc_num = $_POST['cc'];
+  $total = 0;
+  $i = 1;
+
+  // Get last 4 digits
+  $last_four = substr($cc_num, -4, 4);
+
+  // Split string into array
+  $cc_num = str_split($cc_number);
+  
+  // Reverse array
+  $cc_num = array_reverse($cc_num);
+
+  // Loop through array and calculate
+  foreach($cc_num as $digit){
+    // If even digit, 
+    if($i % 2 == 0){
+      // multiply by 2
+      $digit *= 2;
+      if greater than 9,
+      if($digit > 9){
+        // subtract 9
+        $digit -=9;
+      }
+    }
+    // total = total + digit
+    $total += $digit;
+    // incrementer +1
+    $i++;
+  }
+
+  // check total / 10
+  if($total % 10 == 0){
+  // valid
+  echo "valid";
+  } else {
+  // invalid
+  echo "invalid";
+  }
+
+}
+
+*/
